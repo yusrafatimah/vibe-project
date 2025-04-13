@@ -1,6 +1,9 @@
 import { Box, Button, IconButton, Typography } from "@mui/material";
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import FbIcon from "../assets/fb.png";
+import InstaIcon from "../assets/insta.png";
+import TwitterIcon from "../assets/twitter.png";
 
 const Footer = () => {
   const navigate = useNavigate();
@@ -64,13 +67,13 @@ const Footer = () => {
             }}
           >
             <IconButton>
-              <img src="/src/assets/twitter.png" alt="twitter" />
+              <img src={TwitterIcon} alt="twitter" />
             </IconButton>
             <IconButton>
-              <img src="/src/assets/fb.png" alt="facebook" />
+              <img src={FbIcon} alt="facebook" />
             </IconButton>
             <IconButton>
-              <img src="/src/assets/insta.png" alt="insta" />
+              <img src={InstaIcon} alt="insta" />
             </IconButton>
           </Box>
 
