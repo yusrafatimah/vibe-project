@@ -3,6 +3,9 @@ import React from "react";
 import Logo from "../assets/pie-logo.svg";
 import { StyledButton } from "../styles/global";
 const Navbar = () => {
+  const handleRedirect=()=>{
+    window.location.replace('/about')
+  }
   return (
     <Box
       sx={{
@@ -46,6 +49,7 @@ const Navbar = () => {
               backgroundColor: "transparent",
               color: "#121217",
             }}
+            onClick={handleRedirect}
             className="primary-button"
           >
             About
