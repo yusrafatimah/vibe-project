@@ -2,16 +2,21 @@ import { Box, Button, Typography } from "@mui/material";
 import React from "react";
 import Logo from "../assets/pie-logo.svg";
 import { StyledButton } from "../styles/global";
+import { useNavigate } from "react-router-dom";
 const Navbar = () => {
-  const handleRedirect=()=>{
-    window.location.replace('/about')
-  }
+  const navigate = useNavigate();
+
+  const handleRedirect = () => {
+    navigate("/about");
+  };
+
   return (
     <Box
       sx={{
         backgroundColor: "white",
         borderBottom: "2px solid #390060",
       }}
+      margin={"0 47px"}
     >
       <Box
         margin="59px 0px 30px"
