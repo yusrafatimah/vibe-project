@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { theme } from "../theme";
 import { Box, Typography } from "@mui/material";
 import Footer from "../components/Footer";
 
 const PrivacyPolicy = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <>
       <Box
@@ -20,7 +23,7 @@ const PrivacyPolicy = () => {
         >
           <Typography
             fontSize={64}
-            lineHeight={"40px"}
+            lineHeight={"60px"}
             color={theme.textBlack}
             fontWeight={"700"}
             fontFamily={"Playfair Display"}
@@ -32,7 +35,16 @@ const PrivacyPolicy = () => {
           </Typography>
         </Box>
 
-        <Box pl={12} pr={12}>
+        <Box   sx={{
+        pl: {
+          xs: 1,  // padding 1 on extra-small screens (mobile)
+          md: 12, // padding 12 on medium and up (desktop)
+        },
+        pr: {
+          xs: 1,  // padding 1 on extra-small screens (mobile)
+          md: 12, // padding 12 on medium and up (desktop)
+        },
+      }}>
           <Box sx={{ display: "flex", flexDirection: "column", gap: "2rem" }}>
             <Box sx={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
               <Typography
@@ -172,7 +184,7 @@ const PrivacyPolicy = () => {
         >
           <Typography
             fontSize={64}
-            lineHeight={"40px"}
+            lineHeight={"60px"}
             color={theme.textBlack}
             fontWeight={"700"}
             fontFamily={"Playfair Display"}
@@ -183,7 +195,16 @@ const PrivacyPolicy = () => {
             Terms & Conditions
           </Typography>
         </Box>
-        <Box pl={12} pr={12}>
+        <Box  sx={{
+        pl: {
+          xs: 1,  // padding 1 on extra-small screens (mobile)
+          md: 12, // padding 12 on medium and up (desktop)
+        },
+        pr: {
+          xs: 1,  // padding 1 on extra-small screens (mobile)
+          md: 12, // padding 12 on medium and up (desktop)
+        },
+      }}>
           <Box sx={{ display: "flex", flexDirection: "column", gap: "2rem" }}>
             <Box sx={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
               <Typography
@@ -296,7 +317,7 @@ const PrivacyPolicy = () => {
         >
           <Typography
             fontSize={64}
-            lineHeight={"40px"}
+            lineHeight={"60px"}
             color={theme.textBlack}
             fontWeight={"700"}
             fontFamily={"Playfair Display"}
@@ -307,7 +328,16 @@ const PrivacyPolicy = () => {
             Refund Policy
           </Typography>
         </Box>
-        <Box pl={12} pr={12}>
+        <Box  sx={{
+        pl: {
+          xs: 1,  // padding 1 on extra-small screens (mobile)
+          md: 12, // padding 12 on medium and up (desktop)
+        },
+        pr: {
+          xs: 1,  // padding 1 on extra-small screens (mobile)
+          md: 12, // padding 12 on medium and up (desktop)
+        },
+      }}>
           <Box sx={{ display: "flex", flexDirection: "column", gap: "2rem" }}>
             <Box sx={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
               <Typography

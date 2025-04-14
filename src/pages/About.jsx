@@ -1,5 +1,5 @@
 import { Typography, Box } from "@mui/material";
-import React from "react";
+import React, { useEffect } from "react";
 import { theme } from "../theme";
 import { StyledCard } from "../styles/global";
 import HeartIcon from "../assets/Icons/heartIcon.svg";
@@ -8,6 +8,9 @@ import InclusiveIcon from "../assets/Icons/inclusive.png";
 import CommunityIcon from "../assets/Icons/community.svg";
 import Footer from "../components/Footer";
 const About = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <>
       <Box
