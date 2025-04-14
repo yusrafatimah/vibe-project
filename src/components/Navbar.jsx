@@ -38,7 +38,9 @@ const Navbar = () => {
           display={"flex"}
           alignItems={"center"}
           gap={2}
-          sx={{ cursor: "pointer" }}
+          sx={{
+            cursor: "pointer",
+          }}
         >
           <img src={Logo} alt="logo" width={16} height={"auto"} />
           <Typography
@@ -72,7 +74,7 @@ const Navbar = () => {
                   backgroundColor: "transparent",
                   color: "#121217",
                 }}
-                onClick={() => navigate("/login")}
+                onClick={() => navigate("/about")}
                 className="primary-button"
               >
                 About
