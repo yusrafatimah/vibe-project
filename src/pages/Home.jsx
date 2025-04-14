@@ -5,8 +5,10 @@ import { StyledButton, StyledCard } from "../styles/global";
 import AvatarCard from "../components/AvatarCard";
 import JoinNowSection from "../components/JoinNowSection";
 import Footer from "../components/Footer";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+  const navigate = useNavigate();
   return (
     <>
       <Box
@@ -136,6 +138,7 @@ const Home = () => {
                   fontWeight: "500",
                   fontFamily: "Montserrat",
                 }}
+                onClick={() => navigate("/quiz")}
                 className="primary-button"
               >
                 Take The Quiz

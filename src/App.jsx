@@ -1,6 +1,13 @@
 import { Box } from "@mui/material";
 import Navbar from "./components/Navbar";
-import { About, Home, PrivacyPolicy, Login, Signup } from "./pages";
+import {
+  About,
+  Home,
+  PrivacyPolicy,
+  Login,
+  Signup,
+  ChooseYourQuiz,
+} from "./pages";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 
 function App() {
@@ -14,6 +21,7 @@ function App() {
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
+          <Route path="/quiz" element={<ChooseYourQuiz />} />
         </Routes>
       </Router>
     </Box>
