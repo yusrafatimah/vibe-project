@@ -6,7 +6,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 const Navbar = () => {
   const navigate = useNavigate();
   const { pathname } = useLocation();
-  console.log({ pathname });
+
   return (
     <Box
       className="navbar"
@@ -33,7 +33,12 @@ const Navbar = () => {
         display={"flex"}
         justifyContent={"space-between"}
       >
-        <Box display={"flex"} alignItems={"center"} gap={2}>
+        <Box
+          onClick={() => navigate("/")}
+          display={"flex"}
+          alignItems={"center"}
+          gap={2}
+        >
           <img src={Logo} alt="logo" width={16} height={"auto"} />
           <Typography
             fontWeight={"bold"}

@@ -40,7 +40,11 @@ const Footer = () => {
               justifyContent: "space-evenly",
             }}
           >
-            <Button variant="text" sx={{ color: "#6B5E8C" }}>
+            <Button
+              onClick={() => navigate("/about")}
+              variant="text"
+              sx={{ color: "#6B5E8C" }}
+            >
               About Us
             </Button>
             <Button variant="text" sx={{ color: "#6B5E8C" }}>
