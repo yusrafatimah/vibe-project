@@ -14,7 +14,7 @@ const Navbar = () => {
         backgroundColor: "white",
         borderBottom: "2px solid #390060",
         margin: {
-          xs: "0 25px",
+          xs: "0 10px",
           sm: "0px 25px",
           md: "0px 47px",
           lg: "0px 47px",

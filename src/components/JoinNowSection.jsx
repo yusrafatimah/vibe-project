@@ -22,6 +22,7 @@ const JoinNowSection = () => {
           maxWidth: 880,
           width: "100%",
           color: "white",
+          padding: "0 10px",
         }}
       >
         <Typography

@@ -21,7 +21,7 @@ const Login = () => {
       flexDirection={"column"}
       sx={{
         margin: {
-          xs: "0 25px",
+          xs: "0 10px",
           sm: "0px 25px",
           md: "0px 47px",
           lg: "0px 47px",

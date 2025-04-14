@@ -9,9 +9,27 @@ import Footer from "../components/Footer";
 const Home = () => {
   return (
     <>
-      <Box margin={"0 47px"}>
+      <Box
+        sx={{
+          margin: {
+            xs: "0 10px",
+            sm: "0px 25px",
+            md: "0px 47px",
+            lg: "0px 47px",
+            xl: "0px 47px",
+          },
+        }}
+      >
         <Box
-          margin={"0 47px"}
+          sx={{
+            margin: {
+              xs: "0 10px",
+              sm: "0px 25px",
+              md: "0px 47px",
+              lg: "0px 47px",
+              xl: "0px 47px",
+            },
+          }}
           display={"flex"}
           flexDirection={"column"}
           alignItems={"center"}
@@ -20,7 +38,15 @@ const Home = () => {
             display={"flex"}
             justifyContent={"center"}
             position={"relative"}
-            margin={"80px 0 165px 0"}
+            sx={{
+              margin: {
+                xs: "50px 0 100px 0",
+                sm: "50px 0 100px 0",
+                md: "80px 0 165px 0",
+                lg: "80px 0 165px 0",
+                xl: "80px 0 165px 0",
+              },
+            }}
             className="hero-image-gradient"
             height={"fit-content"}
             width={"fit-content"}
@@ -48,26 +74,49 @@ const Home = () => {
               zIndex={2}
             >
               <Typography
-                fontSize={64}
+                fontSize={{ xs: 30, sm: 44, md: 44, lg: 64 }}
                 lineHeight={"24px"}
                 color="#FFFFFF"
                 fontWeight={"800"}
                 fontFamily={"Playfair Display"}
                 letterSpacing={"0px"}
-                marginTop={"34px"}
-                marginBottom={"76px"}
+                sx={{
+                  marginBottom: {
+                    xs: "10px",
+                    sm: "30px",
+                    md: "40px",
+                    lg: "76px",
+                    xl: "76px",
+                  },
+                  marginTop: {
+                    xs: "10px",
+                    sm: "20px",
+                    md: "25px",
+                    lg: "34px",
+                    xl: "34px",
+                  },
+                }}
               >
                 Discover Your Vibe
               </Typography>
               <Typography
-                fontSize={24}
-                lineHeight={"24px"}
+                fontSize={{ xs: 12, sm: 16, md: 19, lg: 24 }}
+                lineHeight={{ xs: "15px", sm: "24px", md: "24px", lg: "24px" }}
                 color="#FFFFFF"
                 fontWeight={"600"}
                 fontFamily={"Montserrat"}
                 margin={"0 148px 127px 148px"}
+                sx={{
+                  margin: {
+                    xs: "0 10px 10px 10px",
+                    sm: "0 20px 30px 20px",
+                    md: "0 100px 60px 100px",
+                    lg: "0 148px 127px 148px",
+                    xl: "0 148px 127px 148px",
+                  },
+                }}
                 letterSpacing={"0px"}
-                maxWidth={"927px"}
+                maxWidth={927}
                 textAlign={"center"}
               >
                 Take our personality quiz and unlock insights about your unique
@@ -76,12 +125,12 @@ const Home = () => {
               </Typography>
               <StyledButton
                 sx={{
-                  maxWidth: 405,
+                  maxWidth: { xs: 200, sm: 405, md: 405, lg: 405 },
                   width: "100%",
-                  height: 95,
+                  height: { xs: 30, sm: 55, md: 75, lg: 95 },
                   backgroundColor: "white",
                   color: "#121217",
-                  fontSize: "24px",
+                  fontSize: { xs: 14, sm: 20, md: 24, lg: 24 },
                   lineHeight: "24px",
                   borderRadius: "27px",
                   fontWeight: "500",
@@ -238,7 +287,7 @@ const Home = () => {
         >
           <Typography
             fontSize={40}
-            lineHeight={"24px"}
+            lineHeight={{ xs: "45px", sm: "24px", md: "24px", lg: "24px" }}
             color="#390060"
             fontWeight={"600"}
             fontFamily={"Playfair Display"}
