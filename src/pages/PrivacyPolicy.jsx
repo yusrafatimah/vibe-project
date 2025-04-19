@@ -414,7 +414,6 @@ const PrivacyPolicy = () => {
           </Box>
         </Box>
       </Box>
-      <Footer />
     </>
   );
 };

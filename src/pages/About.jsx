@@ -300,7 +300,6 @@ const About = () => {
           </Box>
         </Box>
       </Box>
-      <Footer />
     </>
   );
 };
