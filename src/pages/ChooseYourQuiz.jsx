@@ -8,9 +8,9 @@ import {
   Typography,
 } from "@mui/material";
 import React from "react";
-import lifestyleQuiz from "../assets/lifestyleQuiz.png";
-import moodQuiz from "../assets/moodQuiz.png";
-import vibeQuiz from "../assets/vibeQuiz.png";
+import lifestyleQuiz from "../assets/lifestylequiz.png";
+import moodQuiz from "../assets/moodquiz.png";
+import vibeQuiz from "../assets/vibequiz.png";
 import { useNavigate } from "react-router-dom";
 
 const ChooseYourQuiz = () => {
