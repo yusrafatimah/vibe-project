@@ -182,7 +182,7 @@ const Home = () => {
                   height: 340,
                 }}
               >
-                <Box margin={"48px 16px"}>
+                <Box margin={"48px 16px"}        onClick={() => navigate("/takeQuiz")}>
                   <Typography
                     fontSize={24}
                     lineHeight={"20px"}
