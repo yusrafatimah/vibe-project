@@ -5,9 +5,9 @@ import {
   Home,
   PrivacyPolicy,
   Login,
-  Signup,
+  Signup,Community,
   ChooseYourQuiz,
-  MembershipPlan,
+  MembershipPlan,TakeQuiz,
 } from "./pages";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Footer from "./components/Footer";
@@ -25,6 +25,8 @@ function App() {
           <Route path="/signup" element={<Signup />} />
           <Route path="/quiz" element={<ChooseYourQuiz />} />
           <Route path="/plans" element={<MembershipPlan />} />
+          <Route path="/takeQuiz" element={<TakeQuiz />} />
+          <Route path="/community" element={<Community />} />
         </Routes>
         <Footer />
       </Router>

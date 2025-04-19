@@ -319,6 +319,7 @@ const PrivacyPolicy = () => {
             fontSize={64}
             lineHeight={"60px"}
             color={theme.textBlack}
+            justifyContent={"center"}
             fontWeight={"700"}
             fontFamily={"Playfair Display"}
             letterSpacing={"1px"}
@@ -354,6 +355,7 @@ const PrivacyPolicy = () => {
                 fontSize={16}
                 lineHeight={"24px"}
                 color={theme.textBlack}
+                justifyContent={"center"}
                 fontWeight={"400"}
                 fontFamily={"Montserrat"}
                 letterSpacing={"0px"}

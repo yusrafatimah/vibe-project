@@ -5,3 +5,5 @@ export { default as Signup } from "./Signup";
 export { default as Login } from "./Login";
 export { default as ChooseYourQuiz } from "./ChooseYourQuiz";
 export { default as MembershipPlan } from "./MembershipPlan";
+export { default as TakeQuiz } from "./TakeQuiz";
+export { default as Community } from "./Community";
