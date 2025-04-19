@@ -7,8 +7,10 @@ import {
   Login,
   Signup,
   ChooseYourQuiz,
+  MembershipPlan,
 } from "./pages";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -22,7 +24,9 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/quiz" element={<ChooseYourQuiz />} />
+          <Route path="/plans" element={<MembershipPlan />} />
         </Routes>
+        <Footer />
       </Router>
     </Box>
   );

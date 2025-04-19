@@ -324,7 +324,6 @@ const Home = () => {
         </Box>
       </Box>
       <JoinNowSection />
-      <Footer />
     </>
   );
 };

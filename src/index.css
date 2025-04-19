@@ -29,3 +29,7 @@ body {
 .MuiOutlinedInput-root {
   border-radius: 12px !important;
 }
+
+.MuiInputLabel-shrink {
+  background-color: white;
+}

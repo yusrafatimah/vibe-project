@@ -11,17 +11,19 @@ import React from "react";
 import lifestyleQuiz from "../assets/lifestyleQuiz.png";
 import moodQuiz from "../assets/moodQuiz.png";
 import vibeQuiz from "../assets/vibeQuiz.png";
+import { useNavigate } from "react-router-dom";
 
 const ChooseYourQuiz = () => {
+  const navigate = useNavigate();
   return (
     <Box
       sx={{
         margin: {
-          xs: "0 10px",
-          sm: "0px 25px",
-          md: "0px 47px",
-          lg: "0px 47px",
-          xl: "0px 47px",
+          xs: "0 10px 132px 10px",
+          sm: "0 25px 132px 25px",
+          md: "0 47px 132px 47px",
+          lg: "0 47px 132px 47px",
+          xl: "0 47px 132px 47px",
         },
       }}
     >
@@ -74,6 +76,7 @@ const ChooseYourQuiz = () => {
             alignItems: "center",
             justifyContent: "space-between",
             textAlign: "center",
+            boxShadow: "none",
           }}
         >
           <img
@@ -148,6 +151,7 @@ const ChooseYourQuiz = () => {
                 textTransform: "capitalize",
                 mb: "36px",
               }}
+              onClick={() => navigate("/plans")}
             >
               Start Quiz
             </Button>
@@ -168,6 +172,7 @@ const ChooseYourQuiz = () => {
             alignItems: "center",
             justifyContent: "space-between",
             textAlign: "center",
+            boxShadow: "none",
           }}
         >
           <img
@@ -241,8 +246,9 @@ const ChooseYourQuiz = () => {
                 textTransform: "capitalize",
                 mb: "36px",
               }}
+              onClick={() => navigate("/plans")}
             >
-              Vibe Personality Quiz
+              Start Quiz
             </Button>
           </CardActions>
         </Card>
@@ -261,6 +267,7 @@ const ChooseYourQuiz = () => {
             alignItems: "center",
             justifyContent: "space-between",
             textAlign: "center",
+            boxShadow: "none",
           }}
         >
           <img
@@ -334,6 +341,7 @@ const ChooseYourQuiz = () => {
                 textTransform: "capitalize",
                 mb: "36px",
               }}
+              onClick={() => navigate("/plans")}
             >
               Start Quiz
             </Button>

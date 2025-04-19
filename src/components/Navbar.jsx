@@ -38,6 +38,7 @@ const Navbar = () => {
           display={"flex"}
           alignItems={"center"}
           gap={2}
+          sx={{ cursor: "pointer" }}
         >
           <img src={Logo} alt="logo" width={16} height={"auto"} />
           <Typography
