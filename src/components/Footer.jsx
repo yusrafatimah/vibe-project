@@ -64,7 +64,6 @@ const Footer = () => {
                   Privacy Policy
                 </Button>
               </Box>
-
               <Box
                 sx={{
                   display: "flex",
