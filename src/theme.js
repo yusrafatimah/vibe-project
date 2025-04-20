@@ -22,8 +22,11 @@ export const theme={
   textBlack:"#121217",
   colorPurple:"#4B0082",
   lightPurple:" #6B5E8C",
-  
+  darkBlue:"#390060",
   lightBlue:"#00BFFF",
   white:"#FFFFFF",
-  lightGrey:"#878080"
+  lightGrey:"#878080",
+  mixedBlack:"#1C170D",
+  newBlack:"#1C1C21",
+  textGrey:"#3D404A"
 }

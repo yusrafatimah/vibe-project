@@ -138,7 +138,7 @@ const Home = () => {
                   fontWeight: "500",
                   fontFamily: "Montserrat",
                 }}
-                onClick={() => navigate("/quiz")}
+                onClick={() => navigate("/takeQuiz")}
                 className="primary-button"
               >
                 Take The Quiz
