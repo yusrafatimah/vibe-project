@@ -1,19 +1,34 @@
 import { Box, Button, Grid, Typography } from "@mui/material";
 import { default as React } from "react";
-import CheckIcon from '../assets/Icons/check.png';
+import CheckIcon from "../assets/Icons/check.png";
 import { StyledCard } from "../styles/global";
 import { theme } from "../theme";
+import { useNavigate } from "react-router-dom";
 const OverViewSection = () => {
-
+  const navigate = useNavigate();
   return (
     <>
-
-      <Box sx={{ marginLeft:{
-        xs:"1rem",md:"5rem"
-      } , marginRight: {
-        xs:"1rem",md:"5rem"
-      }, marginTop: "3rem" }}>
-        <Box sx={{ display: "flex", flexDirection: "column", gap: "8px", marginTop: "2rem" }}>
+      <Box
+        sx={{
+          marginLeft: {
+            xs: "1rem",
+            md: "5rem",
+          },
+          marginRight: {
+            xs: "1rem",
+            md: "5rem",
+          },
+          marginTop: "3rem",
+        }}
+      >
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            gap: "8px",
+            marginTop: "2rem",
+          }}
+        >
           <Typography
             fontSize={36}
             lineHeight={"45px"}
@@ -22,9 +37,9 @@ const OverViewSection = () => {
             fontFamily={"Montserrat"}
             letterSpacing={"-1px"}
             marginBottom={"1rem"}
-
           >
-            Your Vibe Overview  </Typography>
+            Your Vibe Overview{" "}
+          </Typography>
           <Typography
             fontSize={16}
             lineHeight={"24px"}
@@ -33,9 +48,10 @@ const OverViewSection = () => {
             fontFamily={"Montserrat"}
             letterSpacing={"0px"}
             marginBottom={"2rem"}
-
           >
-            The essence of your Cosmic Alchemist energy  </Typography></Box>
+            The essence of your Cosmic Alchemist energy{" "}
+          </Typography>
+        </Box>
         <Typography
           fontSize={16}
           lineHeight={"24px"}
@@ -44,10 +60,22 @@ const OverViewSection = () => {
           fontFamily={"Montserrat"}
           letterSpacing={"0px"}
           marginBottom={"2rem"}
-
         >
-          As a Cosmic Alchemist, you possess a unique ability to see connections where others don't. You're drawn to transformation and growth, constantly seeking to evolve yourself and elevate those around you. Your energy is both grounding and expansive – you can be the calm in the storm while also inspiring others to reach for the stars. This duality makes you a natural bridge-builder between different types of people. </Typography>
-        <Box sx={{ borderTop: "1px solid #E5E8EB", borderBottom: "1px solid #E5E8EB", padding: "1rem" }}>
+          As a Cosmic Alchemist, you possess a unique ability to see connections
+          where others don't. You're drawn to transformation and growth,
+          constantly seeking to evolve yourself and elevate those around you.
+          Your energy is both grounding and expansive – you can be the calm in
+          the storm while also inspiring others to reach for the stars. This
+          duality makes you a natural bridge-builder between different types of
+          people.{" "}
+        </Typography>
+        <Box
+          sx={{
+            borderTop: "1px solid #E5E8EB",
+            borderBottom: "1px solid #E5E8EB",
+            padding: "1rem",
+          }}
+        >
           <Grid container spacing={2}>
             <Grid size={6} item>
               <Typography
@@ -57,10 +85,9 @@ const OverViewSection = () => {
                 fontWeight={"400"}
                 fontFamily={"Montserrat"}
                 letterSpacing={"0px"}
-
-
               >
-                • Core Traits</Typography>
+                • Core Traits
+              </Typography>
             </Grid>
             <Grid size={6} item>
               <Typography
@@ -70,14 +97,11 @@ const OverViewSection = () => {
                 fontWeight={"400"}
                 fontFamily={"Montserrat"}
                 letterSpacing={"0px"}
-
-
               >
-                • Intuitive</Typography>
+                • Intuitive
+              </Typography>
             </Grid>
           </Grid>
-
-
         </Box>
         <Box sx={{ borderBottom: "1px solid #E5E8EB", padding: "1rem" }}>
           <Grid container spacing={2}>
@@ -89,10 +113,9 @@ const OverViewSection = () => {
                 fontWeight={"400"}
                 fontFamily={"Montserrat"}
                 letterSpacing={"0px"}
-
-
               >
-                • Creative</Typography>
+                • Creative
+              </Typography>
             </Grid>
             <Grid size={6} item>
               <Typography
@@ -102,14 +125,11 @@ const OverViewSection = () => {
                 fontWeight={"400"}
                 fontFamily={"Montserrat"}
                 letterSpacing={"0px"}
-
-
               >
-                • Analytical</Typography>
+                • Analytical
+              </Typography>
             </Grid>
           </Grid>
-
-
         </Box>
         <Box sx={{ borderBottom: "1px solid #E5E8EB", padding: "1rem" }}>
           <Grid container spacing={2}>
@@ -121,10 +141,9 @@ const OverViewSection = () => {
                 fontWeight={"400"}
                 fontFamily={"Montserrat"}
                 letterSpacing={"0px"}
-
-
               >
-                • Empathetic</Typography>
+                • Empathetic
+              </Typography>
             </Grid>
             <Grid size={6} item>
               <Typography
@@ -134,14 +153,11 @@ const OverViewSection = () => {
                 fontWeight={"400"}
                 fontFamily={"Montserrat"}
                 letterSpacing={"0px"}
-
-
               >
-                • Natural Gifts</Typography>
+                • Natural Gifts
+              </Typography>
             </Grid>
           </Grid>
-
-
         </Box>
         <Box sx={{ borderBottom: "1px solid #E5E8EB", padding: "1rem" }}>
           <Grid container spacing={2}>
@@ -153,10 +169,9 @@ const OverViewSection = () => {
                 fontWeight={"400"}
                 fontFamily={"Montserrat"}
                 letterSpacing={"0px"}
-
-
               >
-                • Problem-solving</Typography>
+                • Problem-solving
+              </Typography>
             </Grid>
             <Grid size={6} item>
               <Typography
@@ -166,14 +181,11 @@ const OverViewSection = () => {
                 fontWeight={"400"}
                 fontFamily={"Montserrat"}
                 letterSpacing={"0px"}
-
-
               >
-                • Emotional intelligence</Typography>
+                • Emotional intelligence
+              </Typography>
             </Grid>
           </Grid>
-
-
         </Box>
         <Box sx={{ borderBottom: "1px solid #E5E8EB", padding: "1rem" }}>
           <Grid container spacing={2}>
@@ -185,10 +197,9 @@ const OverViewSection = () => {
                 fontWeight={"400"}
                 fontFamily={"Montserrat"}
                 letterSpacing={"0px"}
-
-
               >
-                • Pattern recognition</Typography>
+                • Pattern recognition
+              </Typography>
             </Grid>
             <Grid size={6} item>
               <Typography
@@ -198,14 +209,11 @@ const OverViewSection = () => {
                 fontWeight={"400"}
                 fontFamily={"Montserrat"}
                 letterSpacing={"0px"}
-
-
               >
-                • Emotional intelligence</Typography>
+                • Emotional intelligence
+              </Typography>
             </Grid>
           </Grid>
-
-
         </Box>
         <Box sx={{ padding: "1rem" }}>
           <Grid container spacing={2}>
@@ -217,10 +225,9 @@ const OverViewSection = () => {
                 fontWeight={"400"}
                 fontFamily={"Montserrat"}
                 letterSpacing={"0px"}
-
-
               >
-                • Pattern recognition</Typography>
+                • Pattern recognition
+              </Typography>
             </Grid>
             <Grid size={6} item>
               <Typography
@@ -230,22 +237,34 @@ const OverViewSection = () => {
                 fontWeight={"400"}
                 fontFamily={"Montserrat"}
                 letterSpacing={"0px"}
-
-
               >
-                • Adaptability</Typography>
+                • Adaptability
+              </Typography>
             </Grid>
           </Grid>
-
-
         </Box>
       </Box>
-      <Box sx={{  marginLeft:{
-        xs:"1rem",md:"5rem"
-      } , marginRight: {
-        xs:"1rem",md:"5rem"
-      }, marginTop: "3rem" }}>
-        <Box sx={{ display: "flex", flexDirection: "column", gap: "8px", marginTop: "2rem" }}>
+      <Box
+        sx={{
+          marginLeft: {
+            xs: "1rem",
+            md: "5rem",
+          },
+          marginRight: {
+            xs: "1rem",
+            md: "5rem",
+          },
+          marginTop: "3rem",
+        }}
+      >
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            gap: "8px",
+            marginTop: "2rem",
+          }}
+        >
           <Typography
             fontSize={32}
             lineHeight={"45px"}
@@ -254,9 +273,9 @@ const OverViewSection = () => {
             fontFamily={"Montserrat"}
             letterSpacing={"-1px"}
             marginBottom={"1rem"}
-
           >
-            Personal Recommendations </Typography>
+            Personal Recommendations{" "}
+          </Typography>
           <Typography
             fontSize={16}
             lineHeight={"24px"}
@@ -265,18 +284,16 @@ const OverViewSection = () => {
             fontFamily={"Montserrat"}
             letterSpacing={"0px"}
             marginBottom={"2rem"}
-
           >
-            Tailored suggestions based on your Cosmic Alchemist vibe</Typography></Box>
+            Tailored suggestions based on your Cosmic Alchemist vibe
+          </Typography>
+        </Box>
       </Box>
       <Box display="flex" flexWrap="wrap" gap={2} p={2}>
-        <StyledCard sx={{ width: {xs:"100%",md:"387px"}, height: "261px" }}>
-          <img
-            src={CheckIcon}
-            alt=""
-            height={"24px"}
-            width={"24px"}
-          />
+        <StyledCard
+          sx={{ width: { xs: "100%", md: "387px" }, height: "261px" }}
+        >
+          <img src={CheckIcon} alt="" height={"24px"} width={"24px"} />
           <Box
             sx={{
               display: "flex",
@@ -295,65 +312,63 @@ const OverViewSection = () => {
               Daily Practices
             </Typography>
             <ul style={{ paddingLeft: "1rem" }}>
-              <li>  <Typography
-                fontSize={14}
-                lineHeight={"21px"}
-                color={theme.lightPurple}
-                fontWeight={"400"}
-                fontFamily={"Montserrat"}
-                letterSpacing={"0px"}
-              >
-                Morning journaling
-
-              </Typography></li>
-              <li> <Typography
-                fontSize={14}
-                lineHeight={"21px"}
-                color={theme.lightPurple}
-                fontWeight={"400"}
-                fontFamily={"Montserrat"}
-                letterSpacing={"0px"}
-              >
-
-                Nature walks
-
-              </Typography></li>
-              <li><Typography
-                fontSize={14}
-                lineHeight={"21px"}
-                color={theme.lightPurple}
-                fontWeight={"400"}
-                fontFamily={"Montserrat"}
-                letterSpacing={"0px"}
-              >
-
-
-                Creative visualization
-
-              </Typography></li>
-              <li><Typography
-                fontSize={14}
-                lineHeight={"21px"}
-                color={theme.lightPurple}
-                fontWeight={"400"}
-                fontFamily={"Montserrat"}
-                letterSpacing={"0px"}
-              >
-
-
-                Mindful breathing
-              </Typography></li>
+              <li>
+                {" "}
+                <Typography
+                  fontSize={14}
+                  lineHeight={"21px"}
+                  color={theme.lightPurple}
+                  fontWeight={"400"}
+                  fontFamily={"Montserrat"}
+                  letterSpacing={"0px"}
+                >
+                  Morning journaling
+                </Typography>
+              </li>
+              <li>
+                {" "}
+                <Typography
+                  fontSize={14}
+                  lineHeight={"21px"}
+                  color={theme.lightPurple}
+                  fontWeight={"400"}
+                  fontFamily={"Montserrat"}
+                  letterSpacing={"0px"}
+                >
+                  Nature walks
+                </Typography>
+              </li>
+              <li>
+                <Typography
+                  fontSize={14}
+                  lineHeight={"21px"}
+                  color={theme.lightPurple}
+                  fontWeight={"400"}
+                  fontFamily={"Montserrat"}
+                  letterSpacing={"0px"}
+                >
+                  Creative visualization
+                </Typography>
+              </li>
+              <li>
+                <Typography
+                  fontSize={14}
+                  lineHeight={"21px"}
+                  color={theme.lightPurple}
+                  fontWeight={"400"}
+                  fontFamily={"Montserrat"}
+                  letterSpacing={"0px"}
+                >
+                  Mindful breathing
+                </Typography>
+              </li>
             </ul>
-
           </Box>
         </StyledCard>
-        <StyledCard sx={{ width:{xs:"100%",md:"387px"} , height: "261px" }}>
-          <img
-            src={CheckIcon}
-            alt=""
-            height={"24px"}
-            width={"24px"}
-          />
+        <StyledCard
+          sx={{ width: { xs: "100%", md: "387px" }, height: "261px" }}
+        >
+          <img src={CheckIcon} alt="" height={"24px"} width={"24px"} />
           <Box
             sx={{
               display: "flex",
@@ -372,66 +387,63 @@ const OverViewSection = () => {
               Ideal Environments
             </Typography>
             <ul style={{ paddingLeft: "1rem" }}>
-              <li>  <Typography
-                fontSize={14}
-                lineHeight={"21px"}
-                color={theme.lightPurple}
-                fontWeight={"400"}
-                fontFamily={"Montserrat"}
-                letterSpacing={"0px"}
-              >
-                Creative workspaces
-
-
-              </Typography></li>
-              <li> <Typography
-                fontSize={14}
-                lineHeight={"21px"}
-                color={theme.lightPurple}
-                fontWeight={"400"}
-                fontFamily={"Montserrat"}
-                letterSpacing={"0px"}
-              >
-                Collaborative teams
-
-
-              </Typography></li>
-              <li><Typography
-                fontSize={14}
-                lineHeight={"21px"}
-                color={theme.lightPurple}
-                fontWeight={"400"}
-                fontFamily={"Montserrat"}
-                letterSpacing={"0px"}
-              >
-
-
-                Access to nature
-
-
-              </Typography></li>
-              <li><Typography
-                fontSize={14}
-                lineHeight={"21px"}
-                color={theme.lightPurple}
-                fontWeight={"400"}
-                fontFamily={"Montserrat"}
-                letterSpacing={"0px"}
-              >
-
-                • Quiet reflection spaces
-              </Typography></li>
+              <li>
+                {" "}
+                <Typography
+                  fontSize={14}
+                  lineHeight={"21px"}
+                  color={theme.lightPurple}
+                  fontWeight={"400"}
+                  fontFamily={"Montserrat"}
+                  letterSpacing={"0px"}
+                >
+                  Creative workspaces
+                </Typography>
+              </li>
+              <li>
+                {" "}
+                <Typography
+                  fontSize={14}
+                  lineHeight={"21px"}
+                  color={theme.lightPurple}
+                  fontWeight={"400"}
+                  fontFamily={"Montserrat"}
+                  letterSpacing={"0px"}
+                >
+                  Collaborative teams
+                </Typography>
+              </li>
+              <li>
+                <Typography
+                  fontSize={14}
+                  lineHeight={"21px"}
+                  color={theme.lightPurple}
+                  fontWeight={"400"}
+                  fontFamily={"Montserrat"}
+                  letterSpacing={"0px"}
+                >
+                  Access to nature
+                </Typography>
+              </li>
+              <li>
+                <Typography
+                  fontSize={14}
+                  lineHeight={"21px"}
+                  color={theme.lightPurple}
+                  fontWeight={"400"}
+                  fontFamily={"Montserrat"}
+                  letterSpacing={"0px"}
+                >
+                  • Quiet reflection spaces
+                </Typography>
+              </li>
             </ul>
-
           </Box>
         </StyledCard>
-        <StyledCard sx={{ width: {xs:"100%",md:"387px"}, height: "261px" }}>
-          <img
-            src={CheckIcon}
-            alt=""
-            height={"24px"}
-            width={"24px"}
-          />
+        <StyledCard
+          sx={{ width: { xs: "100%", md: "387px" }, height: "261px" }}
+        >
+          <img src={CheckIcon} alt="" height={"24px"} width={"24px"} />
           <Box
             sx={{
               display: "flex",
@@ -450,66 +462,81 @@ const OverViewSection = () => {
               Growth Opportunities
             </Typography>
             <ul style={{ paddingLeft: "1rem" }}>
-              <li>  <Typography
-                fontSize={14}
-                lineHeight={"21px"}
-                color={theme.lightPurple}
-                fontWeight={"400"}
-                fontFamily={"Montserrat"}
-                letterSpacing={"0px"}
-              >
-                Public speaking
-
-
-              </Typography></li>
-              <li> <Typography
-                fontSize={14}
-                lineHeight={"21px"}
-                color={theme.lightPurple}
-                fontWeight={"400"}
-                fontFamily={"Montserrat"}
-                letterSpacing={"0px"}
-              >
-                Creative writing
-
-
-              </Typography></li>
-              <li><Typography
-                fontSize={14}
-                lineHeight={"21px"}
-                color={theme.lightPurple}
-                fontWeight={"400"}
-                fontFamily={"Montserrat"}
-                letterSpacing={"0px"}
-              >
-
-
-                Mentorship programs
-
-
-              </Typography></li>
-              <li><Typography
-                fontSize={14}
-                lineHeight={"21px"}
-                color={theme.lightPurple}
-                fontWeight={"400"}
-                fontFamily={"Montserrat"}
-                letterSpacing={"0px"}
-              >
-
-                Community leadership
-              </Typography></li>
+              <li>
+                {" "}
+                <Typography
+                  fontSize={14}
+                  lineHeight={"21px"}
+                  color={theme.lightPurple}
+                  fontWeight={"400"}
+                  fontFamily={"Montserrat"}
+                  letterSpacing={"0px"}
+                >
+                  Public speaking
+                </Typography>
+              </li>
+              <li>
+                {" "}
+                <Typography
+                  fontSize={14}
+                  lineHeight={"21px"}
+                  color={theme.lightPurple}
+                  fontWeight={"400"}
+                  fontFamily={"Montserrat"}
+                  letterSpacing={"0px"}
+                >
+                  Creative writing
+                </Typography>
+              </li>
+              <li>
+                <Typography
+                  fontSize={14}
+                  lineHeight={"21px"}
+                  color={theme.lightPurple}
+                  fontWeight={"400"}
+                  fontFamily={"Montserrat"}
+                  letterSpacing={"0px"}
+                >
+                  Mentorship programs
+                </Typography>
+              </li>
+              <li>
+                <Typography
+                  fontSize={14}
+                  lineHeight={"21px"}
+                  color={theme.lightPurple}
+                  fontWeight={"400"}
+                  fontFamily={"Montserrat"}
+                  letterSpacing={"0px"}
+                >
+                  Community leadership
+                </Typography>
+              </li>
             </ul>
-
           </Box>
         </StyledCard>
       </Box>
-      <Box sx={{ marginLeft:{
-        xs:"1rem",md:"5rem"
-      } , marginRight: {
-        xs:"1rem",md:"5rem"
-      },  marginTop: "3rem" }}>
-        <Box sx={{ display: "flex", flexDirection: "column", gap: "8px", marginTop: "2rem" }}>
+      <Box
+        sx={{
+          marginLeft: {
+            xs: "1rem",
+            md: "5rem",
+          },
+          marginRight: {
+            xs: "1rem",
+            md: "5rem",
+          },
+          marginTop: "3rem",
+        }}
+      >
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            gap: "8px",
+            marginTop: "2rem",
+          }}
+        >
           <Typography
             fontSize={32}
             lineHeight={"45px"}
@@ -518,9 +545,9 @@ const OverViewSection = () => {
             fontFamily={"Montserrat"}
             letterSpacing={"-1px"}
             marginBottom={"1rem"}
-
           >
-            Share Your Results</Typography>
+            Share Your Results
+          </Typography>
           <Typography
             fontSize={16}
             lineHeight={"24px"}
@@ -529,13 +556,20 @@ const OverViewSection = () => {
             fontFamily={"Montserrat"}
             letterSpacing={"0px"}
             marginBottom={"2rem"}
-
           >
-            Let your friends discover their vibe too</Typography></Box>
+            Let your friends discover their vibe too
+          </Typography>
+        </Box>
 
-        <Box sx={{ display: "flex", gap:{
-          xs:"1rem" ,md:"5rem"
-        }  }}>
+        <Box
+          sx={{
+            display: "flex",
+            gap: {
+              xs: "1rem",
+              md: "5rem",
+            },
+          }}
+        >
           <Button
             sx={{
               maxWidth: { xs: 400, sm: 405, md: 405, lg: 405 },
@@ -570,9 +604,15 @@ const OverViewSection = () => {
           >
             Take Another Quiz
           </Button>
-
         </Box>
-        <Box sx={{ display: "flex", flexDirection: "column", gap: "8px", marginTop: "4rem" }}>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            gap: "8px",
+            marginTop: "4rem",
+          }}
+        >
           <Typography
             fontSize={32}
             lineHeight={"45px"}
@@ -581,9 +621,9 @@ const OverViewSection = () => {
             fontFamily={"Montserrat"}
             letterSpacing={"-1px"}
             marginBottom={"1rem"}
-
           >
-            Explore Premium Insights</Typography>
+            Explore Premium Insights
+          </Typography>
           <Typography
             fontSize={16}
             lineHeight={"24px"}
@@ -592,23 +632,41 @@ const OverViewSection = () => {
             fontFamily={"Montserrat"}
             letterSpacing={"0px"}
             marginBottom={"2rem"}
-
           >
-            Unlock deeper analysis and exclusive content.</Typography></Box>
-
+            Unlock deeper analysis and exclusive content.
+          </Typography>
+        </Box>
       </Box>
-      <Box sx={{ display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between", height:{xs:"100%",md:"192px"} , marginTop: "4rem", border: " 1px solid #DEDBE5", padding: "20px" }}>
-        <Box sx={{ display: "flex", flexDirection: "column", justifyContent: "center", }}> <Typography
-          fontSize={32}
-          lineHeight={"45px"}
-          color={theme.newBlack}
-          fontWeight={"700"}
-          fontFamily={"Montserrat"}
-          letterSpacing={"-1px"}
-
-
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "row",
+          alignItems: "center",
+          justifyContent: "space-between",
+          height: { xs: "100%", md: "192px" },
+          marginTop: "4rem",
+          border: " 1px solid #DEDBE5",
+          padding: "20px",
+        }}
+      >
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+          }}
         >
-          Unlock Deeper Insights</Typography>
+          {" "}
+          <Typography
+            fontSize={32}
+            lineHeight={"45px"}
+            color={theme.newBlack}
+            fontWeight={"700"}
+            fontFamily={"Montserrat"}
+            letterSpacing={"-1px"}
+          >
+            Unlock Deeper Insights
+          </Typography>
           <Typography
             fontSize={16}
             lineHeight={"24px"}
@@ -616,10 +674,11 @@ const OverViewSection = () => {
             fontWeight={"400"}
             fontFamily={"Montserrat"}
             letterSpacing={"0px"}
-
-
           >
-            Upgrade your membership to gain a more detailed analysis of your vibe and personalized recommendations.</Typography></Box>
+            Upgrade your membership to gain a more detailed analysis of your
+            vibe and personalized recommendations.
+          </Typography>
+        </Box>
 
         <Button
           sx={{
@@ -635,6 +694,7 @@ const OverViewSection = () => {
             lineHeight: "21px",
             textTransform: "capitalize",
           }}
+          onClick={() => navigate("/plans")}
         >
           Upgrade Now
         </Button>

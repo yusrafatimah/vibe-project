@@ -1,7 +1,10 @@
 import { Box, Button, Typography } from "@mui/material";
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const JoinNowSection = () => {
+  const navigate = useNavigate();
+
   return (
     <Box
       sx={{
@@ -55,6 +58,7 @@ const JoinNowSection = () => {
             color: "white",
             marginTop: "68px",
           }}
+          onClick={() => navigate("/plans")}
         >
           Join Now
         </Button>

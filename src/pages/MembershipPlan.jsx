@@ -1,13 +1,18 @@
 import { Box, Button, Card, CardContent, Typography } from "@mui/material";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { tickSvg } from "../assets/Icons/tick";
 import Accordion from "@mui/material/Accordion";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import { useNavigate } from "react-router-dom";
 
 const MembershipPlan = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const [expanded, setExpanded] = useState(false);
+  const navigate = useNavigate();
 
   const handleChange = (panel) => (event, isExpanded) => {
     setExpanded(isExpanded ? panel : false);
@@ -142,6 +147,7 @@ const MembershipPlan = () => {
                 textTransform: "capitalize",
                 margin: "16px 0",
               }}
+              onClick={() => navigate("/signup")}
             >
               Sign Up
             </Button>
@@ -249,6 +255,7 @@ const MembershipPlan = () => {
                 textTransform: "capitalize",
                 margin: "16px 0",
               }}
+              onClick={() => navigate("/signup")}
             >
               Go Yearly
             </Button>
@@ -368,6 +375,7 @@ const MembershipPlan = () => {
                 textTransform: "capitalize",
                 margin: "16px 0",
               }}
+              onClick={() => navigate("/signup")}
             >
               Sign Up
             </Button>
@@ -456,11 +464,14 @@ const MembershipPlan = () => {
             </AccordionSummary>
             <AccordionDetails>
               <Typography>
-                Nulla facilisi. Phasellus sollicitudin nulla et quam mattis
-                feugiat. Aliquam eget maximus est, id dignissim quam.
+                The purpose of this quiz is to help you discover your unique
+                vibe based on your preferences, habits, and personality traits.
+                The result will give you insights into what kind of vibe
+                resonates with you, which can be fun and insightful!
               </Typography>
             </AccordionDetails>
           </Accordion>
+
           <Accordion
             expanded={expanded === "panel2"}
             onChange={handleChange("panel2")}
@@ -485,12 +496,13 @@ const MembershipPlan = () => {
             </AccordionSummary>
             <AccordionDetails>
               <Typography>
-                Donec placerat, lectus sed mattis semper, neque lectus feugiat
-                lectus, varius pulvinar diam eros in elit. Pellentesque
-                convallis laoreet laoreet.
+                The quiz usually takes around 5-10 minutes to complete. There
+                are a total of 7 questions, and you’ll be asked to choose the
+                option that best describes your preferences and behaviors.
               </Typography>
             </AccordionDetails>
           </Accordion>
+
           <Accordion
             expanded={expanded === "panel3"}
             onChange={handleChange("panel3")}
@@ -515,9 +527,108 @@ const MembershipPlan = () => {
             </AccordionSummary>
             <AccordionDetails>
               <Typography>
-                Nunc vitae orci ultricies, auctor nunc in, volutpat nisl.
-                Integer sit amet egestas eros, vitae egestas augue. Duis vel est
-                augue.
+                The questions in this quiz are designed to explore your
+                personality, lifestyle, and preferences. You’ll be asked to
+                choose options about how you spend your time, how you react in
+                different situations, and what you enjoy most. It’s all about
+                understanding your vibe!
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+
+          <Accordion
+            expanded={expanded === "panel4"}
+            onChange={handleChange("panel4")}
+            sx={{
+              borderRadius: "12px !important",
+              boxShadow: "none",
+              padding: "7px 15px",
+              border: "1px solid #4B0082",
+            }}
+          >
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel4bh-content"
+              id="panel4bh-header"
+            >
+              <Typography
+                component="span"
+                sx={{ width: "100%", flexShrink: 0 }}
+              >
+                How can I interpret my results?
+              </Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>
+                Once you complete the quiz, your results will provide a vibe
+                that reflects your personality. It’s a fun and lighthearted way
+                to gain insight into your preferences. While the results are not
+                scientifically backed, they offer a playful reflection of your
+                personality traits and habits.
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+
+          <Accordion
+            expanded={expanded === "panel5"}
+            onChange={handleChange("panel5")}
+            sx={{
+              borderRadius: "12px !important",
+              boxShadow: "none",
+              padding: "7px 15px",
+              border: "1px solid #4B0082",
+            }}
+          >
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel5bh-content"
+              id="panel5bh-header"
+            >
+              <Typography
+                component="span"
+                sx={{ width: "100%", flexShrink: 0 }}
+              >
+                Can I retake the quiz?
+              </Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>
+                Yes, you can retake the quiz anytime! If you feel like your vibe
+                has changed or if you simply want to try again, feel free to
+                take the quiz again and see if your results are different.
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+
+          <Accordion
+            expanded={expanded === "panel6"}
+            onChange={handleChange("panel6")}
+            sx={{
+              borderRadius: "12px !important",
+              boxShadow: "none",
+              padding: "7px 15px",
+              border: "1px solid #4B0082",
+            }}
+          >
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel6bh-content"
+              id="panel6bh-header"
+            >
+              <Typography
+                component="span"
+                sx={{ width: "100%", flexShrink: 0 }}
+              >
+                Are the results accurate?
+              </Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>
+                The results are meant to be fun and should be taken with a grain
+                of salt. While we use your answers to determine a vibe that best
+                matches your personality, it’s not a scientific analysis. Enjoy
+                the process and take the results as a lighthearted reflection of
+                your unique vibe!
               </Typography>
             </AccordionDetails>
           </Accordion>

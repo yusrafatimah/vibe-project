@@ -151,7 +151,7 @@ const ChooseYourQuiz = () => {
                 textTransform: "capitalize",
                 mb: "36px",
               }}
-              onClick={() => navigate("/plans")}
+              onClick={() => navigate("/takeQuiz")}
             >
               Start Quiz
             </Button>
@@ -246,7 +246,7 @@ const ChooseYourQuiz = () => {
                 textTransform: "capitalize",
                 mb: "36px",
               }}
-              onClick={() => navigate("/plans")}
+              onClick={() => navigate("/takeQuiz")}
             >
               Start Quiz
             </Button>
@@ -341,7 +341,7 @@ const ChooseYourQuiz = () => {
                 textTransform: "capitalize",
                 mb: "36px",
               }}
-              onClick={() => navigate("/plans")}
+              onClick={() => navigate("/takeQuiz")}
             >
               Start Quiz
             </Button>

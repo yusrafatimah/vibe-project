@@ -1,13 +1,14 @@
 import { Box, TextField, Typography } from "@mui/material";
 import React, { useEffect } from "react";
 import data from "../Json/communityData";
-import GroupIcon from '../assets/Icons/group.png'
+import groupData from "../Json/groupsData";
+import GroupIcon from "../assets/Icons/group.png";
 import { StyledCard } from "../styles/global";
 import { theme } from "../theme";
 const Community = () => {
   useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <Box
@@ -20,7 +21,7 @@ const Community = () => {
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            flexDirection: "column"
+            flexDirection: "column",
           }}
         >
           <Typography
@@ -46,19 +47,26 @@ const Community = () => {
             textAlign={"center"}
             marginBottom={"5rem"}
           >
-            Connect with individuals who share your style. Engage in live feeds, contribute to collaborative vibe boards, and interact through likes, comments, and shares.
+            Connect with individuals who share your style. Engage in live feeds,
+            contribute to collaborative vibe boards, and interact through likes,
+            comments, and shares.
           </Typography>
         </Box>
-        <Box sx={{
-          display: "flex", flexDirection: "column", gap: "3rem", pl: {
-            xs: "1rem",  // padding 1 on extra-small screens (mobile)
-            md: "4rem", // padding 12 on medium and up (desktop)
-          },
-          pr: {
-            xs: "1rem",  // padding 1 on extra-small screens (mobile)
-            md: "4rem", // padding 12 on medium and up (desktop)
-          },
-        }}>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            gap: "3rem",
+            pl: {
+              xs: "1rem", // padding 1 on extra-small screens (mobile)
+              md: "4rem", // padding 12 on medium and up (desktop)
+            },
+            pr: {
+              xs: "1rem", // padding 1 on extra-small screens (mobile)
+              md: "4rem", // padding 12 on medium and up (desktop)
+            },
+          }}
+        >
           <Box sx={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
             <Typography
               fontSize={32}
@@ -71,27 +79,35 @@ const Community = () => {
             >
               Active Communities
             </Typography>
-            <Box display="flex" flexWrap="wrap" sx={{
-              gap: {
-                xs: "16px",
-                md: "12px"
-              }
-            }} p={2}>
-              {data.map((item) => (
-                <Box sx={{
-                  minWidth: {
-                    xs: "100%",
-                    md: "250px"
-                  }, width: {
-                    xs: "100%",
-                    md: "250px"
-                  }
-                }}>
+            <Box
+              display="flex"
+              flexWrap="wrap"
+              sx={{
+                gap: {
+                  xs: "16px",
+                  md: "12px",
+                },
+              }}
+              p={2}
+            >
+              {data.slice(0, 4).map((item) => (
+                <Box
+                  sx={{
+                    minWidth: {
+                      xs: "100%",
+                      md: "250px",
+                    },
+                    width: {
+                      xs: "100%",
+                      md: "250px",
+                    },
+                  }}
+                >
                   <img
                     style={{
                       maxWidth: {
                         xs: "100%",
-                        md: "240px"
+                        md: "240px",
                       },
                       height: "240px",
                     }}
@@ -121,11 +137,9 @@ const Community = () => {
                     {item.description}
                   </Typography>
                 </Box>
-
               ))}
             </Box>
           </Box>
-
 
           <Box sx={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
             <Typography
@@ -136,19 +150,19 @@ const Community = () => {
               fontFamily={"Montserrat"}
               letterSpacing={"0px"}
               marginBottom={"1rem"}
-
             >
               Join the Interaction
             </Typography>
             <Box
               component="form"
               sx={{
-                '& > :not(style)': {
-                  m: 1, width: {
+                "& > :not(style)": {
+                  m: 1,
+                  width: {
                     xs: "100%",
-                    md: "30%"
-                  }
-                }
+                    md: "30%",
+                  },
+                },
               }}
               noValidate
               autoComplete="off"
@@ -157,28 +171,30 @@ const Community = () => {
                 id="outlined-suffix-shrink"
                 label="Search for Groups"
                 variant="outlined"
-
-              /></Box>
+              />
+            </Box>
             <Box display="flex" flexWrap="wrap" gap={2} p={2}>
-              {data.map((item) => (
-                <StyledCard sx={{
-                  minHeight: {
-                    xs: "100%",
-                    md: "200px"
-                  },
-                  minWidth: {
-                    xs: "100%",
-                    md: "200px"
-                  },
-                  width: {
-                    xs: "100%",
-                    md: "200px"
-                  },
-                  height: {
-                    xs: "100%",
-                    md: "200px"
-                  }
-                }}>
+              {groupData.map((item) => (
+                <StyledCard
+                  sx={{
+                    minHeight: {
+                      xs: "100%",
+                      md: "200px",
+                    },
+                    minWidth: {
+                      xs: "100%",
+                      md: "200px",
+                    },
+                    width: {
+                      xs: "100%",
+                      md: "200px",
+                    },
+                    height: {
+                      xs: "100%",
+                      md: "200px",
+                    },
+                  }}
+                >
                   <img src={GroupIcon} alt="" height={"24px"} width={"24px"} />
                   <Box
                     sx={{
@@ -212,7 +228,6 @@ const Community = () => {
               ))}
             </Box>
           </Box>
-
         </Box>
       </Box>
     </>
