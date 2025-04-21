@@ -1,15 +1,20 @@
 import { Box, Button, Grid, Typography } from "@mui/material";
 import { default as React } from "react";
-import CheckIcon from '../assets/Icons/check.png';
+import CheckIcon from "../assets/Icons/check.png";
 import { StyledCard } from "../styles/global";
 import { theme } from "../theme";
 const DarkSideSection = () => {
-
   return (
     <>
-
       <Box sx={{ marginLeft: "5rem", marginRight: "5rem", marginTop: "3rem" }}>
-        <Box sx={{ display: "flex", flexDirection: "column", gap: "8px", marginTop: "2rem" }}>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            gap: "8px",
+            marginTop: "2rem",
+          }}
+        >
           <Typography
             fontSize={36}
             lineHeight={"45px"}
@@ -18,9 +23,9 @@ const DarkSideSection = () => {
             fontFamily={"Montserrat"}
             letterSpacing={"-1px"}
             marginBottom={"1rem"}
-
           >
-            Your Dark Side </Typography>
+            Your Dark Side{" "}
+          </Typography>
           <Typography
             fontSize={16}
             lineHeight={"24px"}
@@ -29,9 +34,10 @@ const DarkSideSection = () => {
             fontFamily={"Montserrat"}
             letterSpacing={"0px"}
             marginBottom={"2rem"}
-
           >
-            The essence of your Cosmic Alchemist energy  </Typography></Box>
+            The shadow traits of your Cosmic Alchemist energy{" "}
+          </Typography>
+        </Box>
         <Typography
           fontSize={16}
           lineHeight={"24px"}
@@ -40,10 +46,23 @@ const DarkSideSection = () => {
           fontFamily={"Montserrat"}
           letterSpacing={"0px"}
           marginBottom={"2rem"}
-
         >
-          As a Cosmic Alchemist, you possess a unique ability to see connections where others don't. You're drawn to transformation and growth, constantly seeking to evolve yourself and elevate those around you. Your energy is both grounding and expansive – you can be the calm in the storm while also inspiring others to reach for the stars. This duality makes you a natural bridge-builder between different types of people. </Typography>
-        <Box sx={{ borderTop: "1px solid #E5E8EB", borderBottom: "1px solid #E5E8EB", padding: "1rem" }}>
+          Your deep desire for transformation can sometimes lead to restlessness
+          and dissatisfaction with the present. You may become overly
+          analytical, constantly seeking meaning where there might be none,
+          which can result in overwhelm or indecision. Your emotional depth,
+          while powerful, may at times cause you to absorb others’ pain, leading
+          to burnout or emotional confusion. Your intensity, when unchecked, may
+          feel intimidating to others or cause you to isolate yourself to
+          protect your inner world.{" "}
+        </Typography>
+        <Box
+          sx={{
+            borderTop: "1px solid #E5E8EB",
+            borderBottom: "1px solid #E5E8EB",
+            padding: "1rem",
+          }}
+        >
           <Grid container spacing={2}>
             <Grid size={6} item>
               <Typography
@@ -53,10 +72,9 @@ const DarkSideSection = () => {
                 fontWeight={"400"}
                 fontFamily={"Montserrat"}
                 letterSpacing={"0px"}
-
-
               >
-                • Core Traits</Typography>
+                • Overthinking
+              </Typography>
             </Grid>
             <Grid size={6} item>
               <Typography
@@ -66,14 +84,11 @@ const DarkSideSection = () => {
                 fontWeight={"400"}
                 fontFamily={"Montserrat"}
                 letterSpacing={"0px"}
-
-
               >
-                • Intuitive</Typography>
+                • Emotional overload
+              </Typography>
             </Grid>
           </Grid>
-
-
         </Box>
         <Box sx={{ borderBottom: "1px solid #E5E8EB", padding: "1rem" }}>
           <Grid container spacing={2}>
@@ -85,10 +100,9 @@ const DarkSideSection = () => {
                 fontWeight={"400"}
                 fontFamily={"Montserrat"}
                 letterSpacing={"0px"}
-
-
               >
-                • Creative</Typography>
+                • Isolation
+              </Typography>
             </Grid>
             <Grid size={6} item>
               <Typography
@@ -98,14 +112,11 @@ const DarkSideSection = () => {
                 fontWeight={"400"}
                 fontFamily={"Montserrat"}
                 letterSpacing={"0px"}
-
-
               >
-                • Analytical</Typography>
+                • Self-doubt
+              </Typography>
             </Grid>
           </Grid>
-
-
         </Box>
         <Box sx={{ borderBottom: "1px solid #E5E8EB", padding: "1rem" }}>
           <Grid container spacing={2}>
@@ -117,10 +128,9 @@ const DarkSideSection = () => {
                 fontWeight={"400"}
                 fontFamily={"Montserrat"}
                 letterSpacing={"0px"}
-
-
               >
-                • Empathetic</Typography>
+                • Burnout
+              </Typography>
             </Grid>
             <Grid size={6} item>
               <Typography
@@ -130,14 +140,11 @@ const DarkSideSection = () => {
                 fontWeight={"400"}
                 fontFamily={"Montserrat"}
                 letterSpacing={"0px"}
-
-
               >
-                • Natural Gifts</Typography>
+                • Perfectionism
+              </Typography>
             </Grid>
           </Grid>
-
-
         </Box>
         <Box sx={{ borderBottom: "1px solid #E5E8EB", padding: "1rem" }}>
           <Grid container spacing={2}>
@@ -149,10 +156,9 @@ const DarkSideSection = () => {
                 fontWeight={"400"}
                 fontFamily={"Montserrat"}
                 letterSpacing={"0px"}
-
-
               >
-                • Problem-solving</Typography>
+                • Misjudging intuition
+              </Typography>
             </Grid>
             <Grid size={6} item>
               <Typography
@@ -162,14 +168,11 @@ const DarkSideSection = () => {
                 fontWeight={"400"}
                 fontFamily={"Montserrat"}
                 letterSpacing={"0px"}
-
-
               >
-                • Emotional intelligence</Typography>
+                • Internal conflict
+              </Typography>
             </Grid>
           </Grid>
-
-
         </Box>
         <Box sx={{ borderBottom: "1px solid #E5E8EB", padding: "1rem" }}>
           <Grid container spacing={2}>
@@ -181,10 +184,9 @@ const DarkSideSection = () => {
                 fontWeight={"400"}
                 fontFamily={"Montserrat"}
                 letterSpacing={"0px"}
-
-
               >
-                • Pattern recognition</Typography>
+                • Over-responsibility
+              </Typography>
             </Grid>
             <Grid size={6} item>
               <Typography
@@ -194,50 +196,22 @@ const DarkSideSection = () => {
                 fontWeight={"400"}
                 fontFamily={"Montserrat"}
                 letterSpacing={"0px"}
-
-
               >
-                • Emotional intelligence</Typography>
+                • Suppressed anger
+              </Typography>
             </Grid>
           </Grid>
-
-
-        </Box>
-        <Box sx={{ padding: "1rem" }}>
-          <Grid container spacing={2}>
-            <Grid size={6} item>
-              <Typography
-                fontSize={14}
-                lineHeight={"21px"}
-                color={theme.colorPurple}
-                fontWeight={"400"}
-                fontFamily={"Montserrat"}
-                letterSpacing={"0px"}
-
-
-              >
-                • Pattern recognition</Typography>
-            </Grid>
-            <Grid size={6} item>
-              <Typography
-                fontSize={14}
-                lineHeight={"21px"}
-                color={theme.colorPurple}
-                fontWeight={"400"}
-                fontFamily={"Montserrat"}
-                letterSpacing={"0px"}
-
-
-              >
-                • Adaptability</Typography>
-            </Grid>
-          </Grid>
-
-
         </Box>
       </Box>
       <Box sx={{ marginLeft: "5rem", marginRight: "5rem", marginTop: "3rem" }}>
-        <Box sx={{ display: "flex", flexDirection: "column", gap: "8px", marginTop: "2rem" }}>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            gap: "8px",
+            marginTop: "2rem",
+          }}
+        >
           <Typography
             fontSize={32}
             lineHeight={"45px"}
@@ -246,9 +220,9 @@ const DarkSideSection = () => {
             fontFamily={"Montserrat"}
             letterSpacing={"-1px"}
             marginBottom={"1rem"}
-
           >
-            Personal Recommendations </Typography>
+            Personal Recommendations{" "}
+          </Typography>
           <Typography
             fontSize={16}
             lineHeight={"24px"}
@@ -257,18 +231,14 @@ const DarkSideSection = () => {
             fontFamily={"Montserrat"}
             letterSpacing={"0px"}
             marginBottom={"2rem"}
-
           >
-            Tailored suggestions based on your Cosmic Alchemist vibe</Typography></Box>
+            Tailored suggestions based on your Cosmic Alchemist vibe
+          </Typography>
+        </Box>
       </Box>
       <Box display="flex" flexWrap="wrap" gap={2} p={2}>
         <StyledCard sx={{ width: "387px", height: "261px" }}>
-          <img
-            src={CheckIcon}
-            alt=""
-            height={"24px"}
-            width={"24px"}
-          />
+          <img src={CheckIcon} alt="" height={"24px"} width={"24px"} />
           <Box
             sx={{
               display: "flex",
@@ -287,65 +257,61 @@ const DarkSideSection = () => {
               Daily Practices
             </Typography>
             <ul style={{ paddingLeft: "1rem" }}>
-              <li>  <Typography
-                fontSize={14}
-                lineHeight={"21px"}
-                color={theme.lightPurple}
-                fontWeight={"400"}
-                fontFamily={"Montserrat"}
-                letterSpacing={"0px"}
-              >
-                Morning journaling
-
-              </Typography></li>
-              <li> <Typography
-                fontSize={14}
-                lineHeight={"21px"}
-                color={theme.lightPurple}
-                fontWeight={"400"}
-                fontFamily={"Montserrat"}
-                letterSpacing={"0px"}
-              >
-
-                Nature walks
-
-              </Typography></li>
-              <li><Typography
-                fontSize={14}
-                lineHeight={"21px"}
-                color={theme.lightPurple}
-                fontWeight={"400"}
-                fontFamily={"Montserrat"}
-                letterSpacing={"0px"}
-              >
-
-
-                Creative visualization
-
-              </Typography></li>
-              <li><Typography
-                fontSize={14}
-                lineHeight={"21px"}
-                color={theme.lightPurple}
-                fontWeight={"400"}
-                fontFamily={"Montserrat"}
-                letterSpacing={"0px"}
-              >
-
-
-                Mindful breathing
-              </Typography></li>
+              <li>
+                {" "}
+                <Typography
+                  fontSize={14}
+                  lineHeight={"21px"}
+                  color={theme.lightPurple}
+                  fontWeight={"400"}
+                  fontFamily={"Montserrat"}
+                  letterSpacing={"0px"}
+                >
+                  Morning journaling
+                </Typography>
+              </li>
+              <li>
+                {" "}
+                <Typography
+                  fontSize={14}
+                  lineHeight={"21px"}
+                  color={theme.lightPurple}
+                  fontWeight={"400"}
+                  fontFamily={"Montserrat"}
+                  letterSpacing={"0px"}
+                >
+                  Nature walks
+                </Typography>
+              </li>
+              <li>
+                <Typography
+                  fontSize={14}
+                  lineHeight={"21px"}
+                  color={theme.lightPurple}
+                  fontWeight={"400"}
+                  fontFamily={"Montserrat"}
+                  letterSpacing={"0px"}
+                >
+                  Creative visualization
+                </Typography>
+              </li>
+              <li>
+                <Typography
+                  fontSize={14}
+                  lineHeight={"21px"}
+                  color={theme.lightPurple}
+                  fontWeight={"400"}
+                  fontFamily={"Montserrat"}
+                  letterSpacing={"0px"}
+                >
+                  Mindful breathing
+                </Typography>
+              </li>
             </ul>
-
           </Box>
         </StyledCard>
         <StyledCard sx={{ width: "387px", height: "261px" }}>
-          <img
-            src={CheckIcon}
-            alt=""
-            height={"24px"}
-            width={"24px"}
-          />
+          <img src={CheckIcon} alt="" height={"24px"} width={"24px"} />
           <Box
             sx={{
               display: "flex",
@@ -364,66 +330,61 @@ const DarkSideSection = () => {
               Ideal Environments
             </Typography>
             <ul style={{ paddingLeft: "1rem" }}>
-              <li>  <Typography
-                fontSize={14}
-                lineHeight={"21px"}
-                color={theme.lightPurple}
-                fontWeight={"400"}
-                fontFamily={"Montserrat"}
-                letterSpacing={"0px"}
-              >
-                Creative workspaces
-
-
-              </Typography></li>
-              <li> <Typography
-                fontSize={14}
-                lineHeight={"21px"}
-                color={theme.lightPurple}
-                fontWeight={"400"}
-                fontFamily={"Montserrat"}
-                letterSpacing={"0px"}
-              >
-                Collaborative teams
-
-
-              </Typography></li>
-              <li><Typography
-                fontSize={14}
-                lineHeight={"21px"}
-                color={theme.lightPurple}
-                fontWeight={"400"}
-                fontFamily={"Montserrat"}
-                letterSpacing={"0px"}
-              >
-
-
-                Access to nature
-
-
-              </Typography></li>
-              <li><Typography
-                fontSize={14}
-                lineHeight={"21px"}
-                color={theme.lightPurple}
-                fontWeight={"400"}
-                fontFamily={"Montserrat"}
-                letterSpacing={"0px"}
-              >
-
-                • Quiet reflection spaces
-              </Typography></li>
+              <li>
+                {" "}
+                <Typography
+                  fontSize={14}
+                  lineHeight={"21px"}
+                  color={theme.lightPurple}
+                  fontWeight={"400"}
+                  fontFamily={"Montserrat"}
+                  letterSpacing={"0px"}
+                >
+                  Creative workspaces
+                </Typography>
+              </li>
+              <li>
+                {" "}
+                <Typography
+                  fontSize={14}
+                  lineHeight={"21px"}
+                  color={theme.lightPurple}
+                  fontWeight={"400"}
+                  fontFamily={"Montserrat"}
+                  letterSpacing={"0px"}
+                >
+                  Collaborative teams
+                </Typography>
+              </li>
+              <li>
+                <Typography
+                  fontSize={14}
+                  lineHeight={"21px"}
+                  color={theme.lightPurple}
+                  fontWeight={"400"}
+                  fontFamily={"Montserrat"}
+                  letterSpacing={"0px"}
+                >
+                  Access to nature
+                </Typography>
+              </li>
+              <li>
+                <Typography
+                  fontSize={14}
+                  lineHeight={"21px"}
+                  color={theme.lightPurple}
+                  fontWeight={"400"}
+                  fontFamily={"Montserrat"}
+                  letterSpacing={"0px"}
+                >
+                  • Quiet reflection spaces
+                </Typography>
+              </li>
             </ul>
-
           </Box>
         </StyledCard>
         <StyledCard sx={{ width: "387px", height: "261px" }}>
-          <img
-            src={CheckIcon}
-            alt=""
-            height={"24px"}
-            width={"24px"}
-          />
+          <img src={CheckIcon} alt="" height={"24px"} width={"24px"} />
           <Box
             sx={{
               display: "flex",
@@ -442,62 +403,69 @@ const DarkSideSection = () => {
               Growth Opportunities
             </Typography>
             <ul style={{ paddingLeft: "1rem" }}>
-              <li>  <Typography
-                fontSize={14}
-                lineHeight={"21px"}
-                color={theme.lightPurple}
-                fontWeight={"400"}
-                fontFamily={"Montserrat"}
-                letterSpacing={"0px"}
-              >
-                Public speaking
-
-
-              </Typography></li>
-              <li> <Typography
-                fontSize={14}
-                lineHeight={"21px"}
-                color={theme.lightPurple}
-                fontWeight={"400"}
-                fontFamily={"Montserrat"}
-                letterSpacing={"0px"}
-              >
-                Creative writing
-
-
-              </Typography></li>
-              <li><Typography
-                fontSize={14}
-                lineHeight={"21px"}
-                color={theme.lightPurple}
-                fontWeight={"400"}
-                fontFamily={"Montserrat"}
-                letterSpacing={"0px"}
-              >
-
-
-                Mentorship programs
-
-
-              </Typography></li>
-              <li><Typography
-                fontSize={14}
-                lineHeight={"21px"}
-                color={theme.lightPurple}
-                fontWeight={"400"}
-                fontFamily={"Montserrat"}
-                letterSpacing={"0px"}
-              >
-
-                Community leadership
-              </Typography></li>
+              <li>
+                {" "}
+                <Typography
+                  fontSize={14}
+                  lineHeight={"21px"}
+                  color={theme.lightPurple}
+                  fontWeight={"400"}
+                  fontFamily={"Montserrat"}
+                  letterSpacing={"0px"}
+                >
+                  Public speaking
+                </Typography>
+              </li>
+              <li>
+                {" "}
+                <Typography
+                  fontSize={14}
+                  lineHeight={"21px"}
+                  color={theme.lightPurple}
+                  fontWeight={"400"}
+                  fontFamily={"Montserrat"}
+                  letterSpacing={"0px"}
+                >
+                  Creative writing
+                </Typography>
+              </li>
+              <li>
+                <Typography
+                  fontSize={14}
+                  lineHeight={"21px"}
+                  color={theme.lightPurple}
+                  fontWeight={"400"}
+                  fontFamily={"Montserrat"}
+                  letterSpacing={"0px"}
+                >
+                  Mentorship programs
+                </Typography>
+              </li>
+              <li>
+                <Typography
+                  fontSize={14}
+                  lineHeight={"21px"}
+                  color={theme.lightPurple}
+                  fontWeight={"400"}
+                  fontFamily={"Montserrat"}
+                  letterSpacing={"0px"}
+                >
+                  Community leadership
+                </Typography>
+              </li>
             </ul>
-
           </Box>
         </StyledCard>
       </Box>
       <Box sx={{ marginLeft: "5rem", marginRight: "5rem", marginTop: "3rem" }}>
-        <Box sx={{ display: "flex", flexDirection: "column", gap: "8px", marginTop: "2rem" }}>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            gap: "8px",
+            marginTop: "2rem",
+          }}
+        >
           <Typography
             fontSize={32}
             lineHeight={"45px"}
@@ -506,9 +474,9 @@ const DarkSideSection = () => {
             fontFamily={"Montserrat"}
             letterSpacing={"-1px"}
             marginBottom={"1rem"}
-
           >
-            Share Your Results</Typography>
+            Share Your Results
+          </Typography>
           <Typography
             fontSize={16}
             lineHeight={"24px"}
@@ -517,9 +485,10 @@ const DarkSideSection = () => {
             fontFamily={"Montserrat"}
             letterSpacing={"0px"}
             marginBottom={"2rem"}
-
           >
-            Let your friends discover their vibe too</Typography></Box>
+            Let your friends discover their vibe too
+          </Typography>
+        </Box>
 
         <Box sx={{ display: "flex", gap: "5rem" }}>
           <Button
@@ -556,9 +525,15 @@ const DarkSideSection = () => {
           >
             Take Another Quiz
           </Button>
-
         </Box>
-        <Box sx={{ display: "flex", flexDirection: "column", gap: "8px", marginTop: "4rem" }}>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            gap: "8px",
+            marginTop: "4rem",
+          }}
+        >
           <Typography
             fontSize={32}
             lineHeight={"45px"}
@@ -567,9 +542,9 @@ const DarkSideSection = () => {
             fontFamily={"Montserrat"}
             letterSpacing={"-1px"}
             marginBottom={"1rem"}
-
           >
-            Explore Premium Insights</Typography>
+            Explore Premium Insights
+          </Typography>
           <Typography
             fontSize={16}
             lineHeight={"24px"}
@@ -578,23 +553,41 @@ const DarkSideSection = () => {
             fontFamily={"Montserrat"}
             letterSpacing={"0px"}
             marginBottom={"2rem"}
-
           >
-            Unlock deeper analysis and exclusive content.</Typography></Box>
-
+            Unlock deeper analysis and exclusive content.
+          </Typography>
+        </Box>
       </Box>
-      <Box sx={{ display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between", height: "192px", marginTop: "4rem", border: " 1px solid #DEDBE5", padding: "20px" }}>
-        <Box sx={{ display: "flex", flexDirection: "column", justifyContent: "center", }}> <Typography
-          fontSize={32}
-          lineHeight={"45px"}
-          color={theme.newBlack}
-          fontWeight={"700"}
-          fontFamily={"Montserrat"}
-          letterSpacing={"-1px"}
-
-
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "row",
+          alignItems: "center",
+          justifyContent: "space-between",
+          height: "192px",
+          marginTop: "4rem",
+          border: " 1px solid #DEDBE5",
+          padding: "20px",
+        }}
+      >
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+          }}
         >
-          Unlock Deeper Insights</Typography>
+          {" "}
+          <Typography
+            fontSize={32}
+            lineHeight={"45px"}
+            color={theme.newBlack}
+            fontWeight={"700"}
+            fontFamily={"Montserrat"}
+            letterSpacing={"-1px"}
+          >
+            Unlock Deeper Insights
+          </Typography>
           <Typography
             fontSize={16}
             lineHeight={"24px"}
@@ -602,10 +595,11 @@ const DarkSideSection = () => {
             fontWeight={"400"}
             fontFamily={"Montserrat"}
             letterSpacing={"0px"}
-
-
           >
-            Upgrade your membership to gain a more detailed analysis of your vibe and personalized recommendations.</Typography></Box>
+            Upgrade your membership to gain a more detailed analysis of your
+            vibe and personalized recommendations.
+          </Typography>
+        </Box>
 
         <Button
           sx={{
