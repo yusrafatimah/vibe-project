@@ -3,7 +3,9 @@ import { default as React } from "react";
 import CheckIcon from "../assets/Icons/check.png";
 import { StyledCard } from "../styles/global";
 import { theme } from "../theme";
+import { useNavigate } from "react-router-dom";
 const DarkSideSection = () => {
+  const navigate = useNavigate();
   return (
     <>
       <Box sx={{ marginLeft: "5rem", marginRight: "5rem", marginTop: "3rem" }}>
@@ -615,6 +617,7 @@ const DarkSideSection = () => {
             lineHeight: "21px",
             textTransform: "capitalize",
           }}
+          onClick={() => navigate("/plans")}
         >
           Upgrade Now
         </Button>
