@@ -5,9 +5,11 @@ import {
   Home,
   PrivacyPolicy,
   Login,
-  Signup,Community,
+  Signup,
+  Community,
   ChooseYourQuiz,
-  MembershipPlan,TakeQuiz,
+  MembershipPlan,
+  TakeQuiz,
 } from "./pages";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Footer from "./components/Footer";

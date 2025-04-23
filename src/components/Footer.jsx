@@ -56,8 +56,12 @@ const Footer = () => {
                 <Button variant="text" sx={{ color: "#6B5E8C" }}>
                   Terms of Service
                 </Button>
-                <Button variant="text" sx={{ color: "#6B5E8C" }}     onClick={() => navigate("/community")}>
-              Community
+                <Button
+                  variant="text"
+                  sx={{ color: "#6B5E8C" }}
+                  onClick={() => navigate("/community")}
+                >
+                  Community
                 </Button>
                 <Button
                   variant="text"
